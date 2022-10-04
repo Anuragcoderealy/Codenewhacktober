@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: red;
+}
+
+.header {
+    display: flex;
+    border: .2rem solid red;
+    align-items: center;
+    font-size: 4rem;
+    justify-content: center;
+    height: 6rem;
+    color: red;
+    background-color: rgba(236, 248, 3, 0.523);
+    background-color: black;
+}
+
+.calculator{
+    box-shadow: .5rem .5rem black;
+    border: .2rem solid black;
+    background-color: cadetblue;
+    padding: 1rem;
+    width: 25rem;
+    border-radius: 2rem;
+    height: auto;
+    margin: auto;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+}
+
+.screen{
+    height: 6rem;
+    background-color: aqua;
+    color: black;
+    width: 95%;
+    border: .2rem solid black ;
+    padding: .3rem;
+    padding-left: .7rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+table{
+    margin: auto;
+    margin-top: 1rem;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 5.6rem;
+    height: 4rem;
+    color: white;
+    background-color: black;
+    border: .1rem solid aqua;
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem blue;
+    margin: .2rem;
+}
+
+button:active {
+    box-shadow: 0rem 0rem black ;
+}
+
+@media(max-width:800px) {
+    html{
+        font-size: 80%;
+    }
+}
+
+@media(max-width:500px){
+    html{
+        font-size: 65%;
+    }
+}
+
+@media(max-width:400px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:320px){
+    html{
+        font-size: 45%;
+    }
+}
+
+
