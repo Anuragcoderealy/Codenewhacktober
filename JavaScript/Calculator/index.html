@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+           <strong>Calculator</strong> 
+        </div>
+
+        <div class="calculator">
+            <input type="text" id="screen" class="screen" onblur="this.focus()" autofocus>
+            <table>
+                <tr>
+                    <td> <button style="background-color: red;">C</button> </td>
+                    <td> <button>)</button></td>
+                    <td> <button>(</button> </td>
+                    <td> <button style="background-color: orange;">⌫</button></td>
+                </tr>
+                <tr>
+                    <td> <button>7</button> </td>
+                    <td> <button>8</button></td>
+                    <td> <button>9</button> </td>
+                    <td> <button style="background-color: orange;">X</button></td>
+                </tr>
+                <tr>
+                    <td> <button>4</button> </td>
+                    <td> <button>5</button></td>
+                    <td> <button>6</button> </td>
+                    <td> <button style="background-color: orange;">/</button></td>
+                </tr>
+                <tr>
+                    <td> <button>3</button> </td>
+                    <td> <button>2</button></td>
+                    <td> <button>1</button> </td>
+                    <td> <button style="background-color: orange;">-</button></td>
+                </tr>
+                <tr>
+                    <td> <button>0</button> </td>
+                    <td> <button>.</button></td>
+                    <td> <button>+</button> </td>
+                    <td> <button id="=" style="background-color: blue;" >=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="logic.js"></script>
+</html>
