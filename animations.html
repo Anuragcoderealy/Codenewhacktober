@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .loading {
+        justify-content: center;
+        display: flex;
+      }
+      .loading::after {
+        content: "";
+        animation: loading 6s ease-in-out infinite;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 10px solid rgb(247, 233, 233);
+        border-top-color: green;
+      }
+      @keyframes loading {
+        to {
+          transform: rotate(1turn);
+        }
+      }
+
+      .contain {
+        margin: 70px auto;
+        width: 100px;
+      }
+      .dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .one {
+        background-color: indianred;
+        animation: jump 0.6s 0.1s linear infinite;
+      }
+      .two {
+        background-color: lawngreen;
+        animation: jump 0.6s 0.2s linear infinite;
+      }
+      .three {
+        background-color: lightseagreen;
+        animation: jump 0.6s 0.3s linear infinite;
+      }
+      @keyframes jump {
+        50% {
+          transform: translate(0, 15px);
+        }
+      }
+
+      .boxer {
+        width: 100px;
+        margin: 70px auto;
+      }
+      .box {
+        width: 20px;
+        height: 20px;
+        background-color: maroon;
+        display: inline-block;
+        animation: pulse 4s linear infinite;
+      }
+      .on {
+        animation-delay: 1s;
+      }
+      .tw {
+        animation-delay: 1.5s;
+      }
+      .th {
+        animation-delay: 2s;
+      }
+      .fo {
+        animation-delay: 2.5s;
+      }
+      @keyframes pulse {
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="loading"></div>
+    <div class="contain">
+      <div class="dot one"></div>
+      <div class="dot two"></div>
+      <div class="dot three"></div>
+    </div>
+    <div class="boxer">
+      <div class="box on"></div>
+      <div class="box tw"></div>
+      <div class="box th"></div>
+      <div class="box fo"></div>
+    </div>
+  </body>
+  
+</html>
