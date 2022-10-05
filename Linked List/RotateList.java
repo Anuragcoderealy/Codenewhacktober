@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/rotate-list
+// https://leetcode.com/problems/rotate-list/
 
 import java.util.*;
 public class RotateList {
