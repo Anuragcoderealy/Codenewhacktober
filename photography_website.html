@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Professional Photographer available for weddings and special events" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="./icons/2089052.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Elena Joy | Photographer Srikanth</title>
+    <style>
+    /* Global Styles */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: "Ruhl";
+      src: url("./fonts/FrankRuhlLibre-Regular.ttf");
+    }
+
+    @font-face {
+      font-family: "Ruhl Medium";
+      src: url("./fonts/FrankRuhlLibre-Medium.ttf");
+    }
+
+    @font-face {
+      font-family: "Vibes";
+      src: url("./fonts/GreatVibes-Regular.ttf");
+    }
+
+    html {
+      font-size: 62.5%;
+      --header1: calc(2rem + 1vw);
+      --header2: calc(3.5rem + 1vw);
+      --header3: calc(3rem + 1vw);
+      --header4: calc(2.4rem + 1vw);
+      --text: calc(1.5rem + 1vw);
+      --big: calc(6rem + 1vw);
+      --special-color: #906272;
+      --background-color: #414141;
+      --gray-text: #525252;
+      scroll-behavior: smooth;
+    }
+
+    h1 {
+      font-size: var(--header1);
+    }
+    li,
+    button,
+    label,
+    input,
+    a,
+    p {
+      font-size: var(--text);
+    }
+    h2 {
+      font-size: var(--header2);
+    }
+    h3 {
+      font-size: var(--header3);
+    }
+    h4,
+    h5 {
+      font-size: var(--header4);
+    }
+
+    ul {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+      font-family: "Ruhl", sans-serif;
+      animation: opening 1s ease-in-out;
+    }
+
+    h1 {
+      font-family: "Vibes", sans-serif;
+    }
+
+    /* Nav Section */
+
+    .main-head {
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+      z-index: 2;
+      position: sticky;
+      top: 0%;
+      background: #414141;
+      color: white;
+    }
+
+    nav {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      min-height: 10vh;
+      padding: 2rem 0rem;
+    }
+
+    #logo {
+      flex: 1 1 20rem;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      flex: 1 1 20rem;
+    }
+
+    .hero {
+      min-height: 90vh;
+      /* width: 90%; */
+      margin: 0 0 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+
+    .hero-introduction {
+      flex: 2 1 40rem;
+      text-align: center;
+      background: linear-gradient(rgba(49, 89, 126, 0.8), transparent);
+    }
+
+    .hero-introduction p {
+      padding: 5rem 10rem;
+      color: var(--text);
+    }
+
+    .hero-introduction h2 {
+      padding-top: 3rem;
+    }
+
+    .hero-introduction a {
+      padding: 1rem 6rem;
+      border: 3px solid black;
+      margin: 1rem 0rem 4rem 0rem;
+    }
+
+    .hero-images {
+      flex: 1 1 40rem;
+      background: linear-gradient(#dad8dd, #dad1d4);
+      position: relative;
+      z-index: 1;
+    }
+
+    #link-gallary-button {
+      color: black;
+    }
+
+    .hero-elena {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .plant {
+      position: absolute;
+      bottom: 0;
+      left: -20%;
+      z-index: -1;
+      /* transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg); */
+      animation: plant-entrance 1.5s ease-in-out forwards,
+        plant-shake 2.5s infinite ease alternate-reverse 2s;
+      transform-origin: bottom;
+    }
+
+    .plant2 {
+      left: 40%;
+    }
+
+    .plant1 {
+      top: 10%;
+    }
+
+    /* ANIMATIONS */
+
+    @keyframes opening {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes plant-entrance {
+      from {
+        transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
+      }
+      to {
+        transform: translateY(0%) rotateZ(0deg) rotateX(0deg);
+      }
+    }
+
+    @keyframes plant-shake {
+      from {
+        transform: rotateZ(-5deg);
+      }
+      to {
+        transform: rotateZ(0deg);
+      }
+    }
+
+    .burger,
+    .menu-check {
+      display: none;
+    }
+
+    /* ABOUT SECTION */
+
+    .about {
+      min-height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      color: white;
+      background: var(--background-color);
+      flex: 2 1 40rem;
+      justify-content: space-around;
+    }
+
+    .about-text div {
+      padding: 3rem 8rem;
+    }
+
+    .about-text h3 {
+      padding: 2rem 0rem;
+      font-family: "Ruhl Medium";
+    }
+
+    .about-text h2 {
+      font-family: "Vibes";
+      padding: 4rem;
+    }
+
+    .about-image {
+      flex: 1 1 40rem;
+      position: relative;
+    }
+
+    .about-image h5 {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      letter-spacing: 2rem;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Gallary Section */
+    .gallary {
+      display: grid;
+      min-height: 100vh;
+      grid-template-columns: repeat(3, 1fr);
+      position: relative;
+    }
+
+    .gallary img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallary1 {
+      grid-column: 1/3;
+    }
+
+    .gallary2 {
+      grid-column: 3/4;
+      grid-row: 1/3;
+    }
+
+    .gallary-head {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      background: linear-gradient(rgba(49, 89, 126, 0.8), transparent),
+        var(--background-color);
+      padding: 5rem 8rem;
+      text-align: center;
+    }
+
+    /* Contact Section */
+
+    .contact {
+      min-height: 90vh;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .form-wrapper {
+      flex: 3 1 40rem;
+    }
+
+    .form-wrapper h2 {
+      margin: 5rem 0rem;
+    }
+
+    .form-wrapper label {
+      display: block;
+    }
+
+    .form-wrapper input {
+      display: block;
+      margin: 3rem 0rem;
+      background: var(--background-color);
+      color: white;
+      border: none;
+      padding: 1rem;
+    }
+
+    .form-wrapper button {
+      padding: 1rem 7rem;
+      border: none;
+      background: var(--special-color);
+      color: white;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .form-wrapper span {
+      font-size: var(--big);
+      color: var(--special-color);
+    }
+    .contact img {
+      flex: 1 1 40rem;
+    }
+
+    /* Footer Section */
+
+    footer {
+      background: var(--background-color);
+      color: white;
+      display: flex;
+      padding: 3rem 5%;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    footer h4 {
+      flex: 3 1 40rem;
+      font-size: calc(1.4rem + 1vw);
+    }
+
+    footer ul {
+      display: flex;
+      flex: 1 1 40rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 903px) {
+      .hero {
+        width: 100%;
+      }
+
+      .hero-introduction p {
+        padding: 5rem 3rem;
+      }
+
+      .hero-introduction a {
+        padding: 0.7rem 4rem;
+        border: 2px solid black;
+        margin-bottom: 3rem;
+      }
+
+      /* Burger Thing */
+
+      .burger {
+        position: relative;
+        display: block;
+        cursor: pointer;
+      }
+      .burger span {
+        padding: 0.2rem 2rem;
+        background: white;
+        margin: 0.5rem 0rem;
+        display: block;
+        transition: all 0.5s ease;
+      }
+      .nav-links a {
+        color: white;
+        font-size: var(--header3);
+        text-decoration: underline;
+      }
+      .nav-links {
+        background: var(--background-color);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0%;
+        left: 100%;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 1s ease;
+      }
+      /* .menu-check {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translate(5%, -50%);
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 100;
+      } */
+      .nav-open {
+        transform: translate(-100%);
+      }
+
+      .toggle .line1 {
+        transform: rotateZ(45deg) translateY(300%);
+        background: white;
+      }
+
+      .toggle .line2 {
+        opacity: 0;
+      }
+
+      .toggle .line3 {
+        transform: rotateZ(-45deg) translateY(-300%);
+        background: white;
+      }
+
+      /* About Section media query */
+      .about-text div {
+        padding: 3rem 3rem;
+      }
+
+      /* Gallary Section for media */
+      .gallary img {
+        grid-row: auto;
+        grid-column: auto;
+      }
+      .gallary {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      }
+      .gallary-head {
+        display: none;
+      }
+
+      /* Contact MEdtia Query */
+      .contact img {
+        display: none;
+      }
+
+      footer ul {
+        order: 1;
+      }
+
+      footer h4 {
+        order: 2;
+        text-align: center;
+        padding: 1rem;
+      }
+    }
+
+    @media screen and (min-width: 1700px) {
+      html {
+        --header1: 3rem;
+        --header2: 5.5rem;
+        --header3: 4rem;
+        --header4: 3rem;
+        --text: 3.5rem;
+        --big: 9rem;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <h1 id="logo"><a href="#home">Elena Joy</a></h1>
+        <!-- <input type="checkbox" class="menu-check" /> -->
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallary">Gallary</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-introduction flex">
+          <h2>
+            Elena Joy <br />
+            Photography
+          </h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            libero officia atque obcaecati facilis illo laboriosam quidem iste
+            consequuntur ratione.
+          </p>
+          <a id="link-gallary-button" href="#gallary">Gallary</a>
+        </div>
+        <div class="hero-images">
+          <img
+            class="hero-elena"
+            src="./img/elena-joy.png"
+            alt="picture of ElenaJoy"
+          />
+          <img src="./img/plant1.png" alt="" class="plant1 plant" />
+          <img src="./img/plant2.png" alt="" class="plant2 plant" />
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-image">
+          <h5>MINIMAL</h5>
+          <img src="./img/about-image.png" alt="" />
+        </div>
+        <div class="about-text flex">
+          <h2>Elena Joy</h2>
+          <div class="about-life">
+            <h3>My Life</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Assumenda cupiditate vel omnis! Culpa rerum sapiente sunt,
+              deserunt quisquam iste molestias.
+            </p>
+          </div>
+          <div class="about-work">
+            <h3>My Work</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Assumenda cupiditate vel omnis! Culpa rerum sapiente sunt,
+              deserunt quisquam iste molestias.
+            </p>
+          </div>
+          <div class="about-contact">
+            <h3>Get in touch</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Assumenda cupiditate vel omnis! Culpa rerum sapiente sunt,
+              deserunt quisquam iste molestias.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="gallary" id="gallary">
+        <header class="gallary-head">
+          <h2>Quality Photography</h2>
+          <p>My work pictures that I took</p>
+        </header>
+        <img class="gallary1" src="./img/gallery-1.jpg" alt="man in suit" />
+        <img class="gallary2" src="./img/gallery-2.jpg" alt="lady in coat" />
+        <img class="gallary3" src="./img/gallery-3.jpg" alt="lady in t-shirt" />
+        <img class="gallary4" src="./img/gallery-4.jpg" alt="lady in jacket" />
+      </div>
+
+      <section class="contact" id="contact">
+        <div class="form-wrapper flex">
+          <h2>Get in <br /><span>touch</span></h2>
+          <form action="">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" required />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div>
+          <img src="./img/contact-image.jpg" alt="elena-joy" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h4>Elena Joy &copy; 2020</h4>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCOgi-aATcYNyWe6Rtkrq20w"
+            ><img src="./img/youtube-symbol 1.svg" alt="youtube-social-media"
+          /></a>
+        </li>
+        <li>
+          <a href="" target="_blank"
+            ><img src="./img/twitter 1.svg" alt="twitter-social-media"
+          /></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.instagram.com/racharlasrikanth/"
+            ><img src="./img/instagram 1.svg" alt="instagram-social-media"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
