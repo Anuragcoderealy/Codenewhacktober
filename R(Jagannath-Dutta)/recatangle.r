@@ -1,0 +1,9 @@
+rectangle<-function(length,breadth){
+  area=length*breadth
+  perimeter=2*(length+breadth)
+  result<-list("area"=area,"perimeter"=perimeter)
+  return(result)
+}
+resultlist<-rectangle(2,3)
+print(resultlist["area"])
+print(resultlist["perimeter"])
