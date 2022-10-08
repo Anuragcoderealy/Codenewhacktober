@@ -1,0 +1,26 @@
+body{
+    
+    background-image: url(https://ringtonefm.com/wp-content/uploads/2022/07/Jehda-Nasha-Nasha-Teri-1280x720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    text-align: center;
+} 
+h1{
+    color: beige;
+    text-shadow: 2px 2px 5px  whitesmoke;
+}
+h2{
+    color: blanchedalmond;
+    text-shadow: 3px 2px 5px whitesmoke;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    opacity: 1;
+    display: block;
+    margin: auto;
+}
