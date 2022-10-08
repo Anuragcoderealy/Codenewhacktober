@@ -1,0 +1,15 @@
+exp1<-function(x){
+  sum=1.0
+  comp=1.0
+  n=1
+  repeat{
+    comp=comp*x/n
+    sum=sum+comp
+    n=n+1 
+    if(abs(comp)<0.00001){
+      break
+    }
+  }
+  return(sum)
+}
+exp1(1)

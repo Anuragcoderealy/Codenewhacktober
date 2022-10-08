@@ -1,0 +1,16 @@
+cos1<-function(x){
+  sum=1.0
+  comp=1.0
+  n=1
+  repeat{
+    comp=-comp*x^2
+    sum=sum+(comp/factorial(2*n))
+    if(abs(comp/factorial(2*n))<0.0001){
+      break
+    }
+    n=n+1
+  }
+  return(sum)
+}
+cos1(0.3)
+cos(0.3)
