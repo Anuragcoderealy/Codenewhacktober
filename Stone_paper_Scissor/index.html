@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>STONE PAPER SCISSOR</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 id="round"></h1>
+    <div class="container">
+        <div id="id4">
+            <div class="row">
+                <div class="col-md-3 text-center shadow-lg p-3 mb-5 bg-white rounded">
+                    <h5 id="player">Player Score</h5>
+                    <h6 id="user_score">0</h6>
+                </div>
+            </div>
+        </div>
+        <div id="id3">
+            <div class="row">
+                <div class="col-md-3 text-center shadow-lg p-3 mb-5 bg-white rounded">
+                    <h5 id="computer">Computer Score</h5>
+                    <h6 id="Computer_score">0</h6>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div id="id1">
+                <div class="col-md-4 text-center shadow-lg p-3 mb-5 bg-white rounded">
+                    <h1>Choose Number of Rounds</h1>
+                    <table class="table">
+                        <tr>
+                            <td><button id="but5" onclick="my_fun5();">5</button></td>
+                            <td><button id="but10" onclick="my_fun6();">10</button></td>
+                            <td><button id="but15" onclick="my_fun7();">15</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="id2">
+                <div class="col-md-5 text-center shadow-lg p-3 mb-5 bg-white rounded">
+                    <h1>STONE PAPER SCISSOR</h1>
+                    <table class="table">
+                        <tr>
+                            <td><button id="sc" onclick="my_fun2(); my_fun();"><img src="scissor.jfif" alt="Scissor" style="width:100px;height:100px"></button></td>
+                            <td><button id="st" onclick="my_fun3(); my_fun()"><img src="stone.jfif" alt="Stone" style="width:100px;height:100px"></button></td>
+                            <td><button id="paper" onclick="my_fun4(); my_fun()"><img src="paper.jpg" alt="Paper" style="width:100px;height:100px"></button></td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <button id="but" onclick="myfun_1()">RESET</button>
+                    <br><br>
+                    <h5 id="print"></h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script src="./index.js"></script>

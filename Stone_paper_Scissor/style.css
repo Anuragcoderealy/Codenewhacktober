@@ -1,0 +1,74 @@
+body {
+    background-image: linear-gradient(120deg, #33ccff 0%, #ff99cc 100%);
+}
+
+#id1 {
+    display: block;
+    color: white;
+    margin-top: 200px !important;
+    margin-left: 700px !important;
+}
+
+#id2 {
+    display: none;
+    color: white;
+    margin-top: 150px !important;
+    background-image: linear-gradient(120deg, #9f58eb 0%, #ff99cc 100%);
+}
+
+#id3 {
+    display: none;
+    color: white;
+    margin-top: 150px !important;
+}
+
+#id4 {
+    display: none;
+    color: white;
+    margin-top: 150px !important;
+}
+
+.col-md-4 {
+    background-image: linear-gradient(120deg, #9f58eb 0%, #ff99cc 100%);
+}
+
+.col-md-5 {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    background-image: linear-gradient(120deg, #9f58eb 0%, #ff99cc 100%);
+}
+
+#but,
+#but5,
+#but10,
+#but15 {
+    padding: 5px 5px 5px 5px;
+    border: 1px solid rgb(171, 234, 132);
+    margin: auto;
+    border-radius: 4px;
+    background-color: rgb(19, 167, 164);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#print {
+    color: white;
+    font-size: 20x;
+}
+
+#round {
+    color: white;
+    font-size: 20px;
+    background-color: aqua;
+}
+
+.col-md-3 {
+    background-image: linear-gradient(120deg, #9f58eb 0%, #ff99cc 100%);
+}
+
+h1 {
+    text-align: center;
+    background-image: linear-gradient(120deg, #9f58eb 0%, #ff99cc 100%);
+}
