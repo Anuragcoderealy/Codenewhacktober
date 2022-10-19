@@ -1,0 +1,54 @@
+#include<iostream>
+#include<stack>
+using namespace std;
+
+int main(){
+int n;
+cout<<"Enter no of vertices in graph: ";
+cin>>n;
+
+int adj[n][n];
+int indegree[n];
+stack <int> st;
+for(int i=0 ; i<n; i++){
+	indegree[i]=0;
+}
+cout<<"Enter adjacency matrix:\n";
+for(int i= 0; i<n; i++){
+ for(int j=0; j<n; j++){
+ 	cin>>adj[i][j];
+ 	if (adj[i][j]==1){
+ 		indegree[j]+=1;
+	 }
+ }	
+}
+
+for(int i=0; i<n; i++){
+	if(indegree[i]==0){
+		st.push(i);
+	}
+}
+
+int vertex;
+while(!st.empty()){
+vertex = st.top();
+cout<<vertex<<" ";
+
+st.pop();
+for(int i=0; i<n; i++){
+	if(adj[vertex][i]==1){
+	 adj[vertex][i]=0;
+	 indegree[i]-=1;
+	 if(indegree[i]==0){
+		st.push(i);
+	}	
+	}
+	
+	
+}	
+}
+
+
+return 0;
+}
+
