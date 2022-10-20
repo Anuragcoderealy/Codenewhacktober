@@ -1,0 +1,6 @@
+x1=float(input("enter x coordinate of first point:"))
+y1=float(input("enter y coordinate of first point:"))
+x2=float(input("enter x coordinate of second point:"))
+y2=float(input("enter y coordinate of second point:"))
+d=((x2-x1)**2+(y2-y1)**2)**0.5
+print("distance=",d)
