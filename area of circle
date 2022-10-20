@@ -1,0 +1,5 @@
+r=float(input("enter the radius of a circle:"))
+area=3.14*(r**2)
+c=2*3.14*r
+print("area=",area)
+print("circumference=",c)
