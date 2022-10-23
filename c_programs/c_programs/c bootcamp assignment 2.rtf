@@ -1,0 +1,603 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 #include<stdio.h>\par
+int main()\par
+\{\par
+int a;\tab\par
+\tab printf("Enter the value of a=");\par
+\tab scanf("%d",&a);\par
+\tab if(a%2==0)\par
+\tab\par
+\tab   printf("number is even %d",a);\par
+\tab else\par
+\tab  printf(" number is odd %d",a);\par
+\}\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab char c;\par
+\tab int uppercase_vowel,lowercase_vowel;\par
+\tab printf("Enter a character");\par
+\tab scanf("%c",c);\par
+\tab uppercase_vowel=(c=='a'||c=='e'||c ='i'||c=='o'||c=='u');\par
+    lowercase_vowel=(c=='A'||c=='E'||c=='I'||c='O'C=='U');\par
+\tab  if(uppercase_vowel||lowercase_vowel)\par
+         printf("vowel");\tab\par
+\tab\tab else\par
+\tab         printf("consonant");\par
+\}\par
+\}\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int a,b,c;\par
+\tab printf("Enter three numbers");\par
+\tab scanf("%d%d%d",&a,&b,&c);\par
+\tab a>b?a>c?a:c:b>c?b:c;\par
+\par
+\}\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int a;\par
+\tab printf("Enter a number");\par
+\tab scanf("%d",&a);\par
+\tab if(a>0)\par
+\tab   printf("positive");\par
+\tab else\par
+\tab   printf("negative");\par
+\}\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int year;\par
+\tab printf("Enter a year");\par
+\tab scanf("%d",&year);\par
+\tab if(year%4==0)\par
+\tab\{\par
+\tab\tab if(year%100==0)\par
+\tab\tab\{\par
+\tab\tab\tab if(year%400==0)\par
+\tab\tab\tab printf("leap");\par
+\tab\tab\}\par
+\tab\tab else\par
+\tab\tab   printf("not leap");\par
+\tab\tab\par
+\tab\}\par
+\tab\par
+\}\par
+\par
+#include<stdio.h>\par
+int main()\par
+\tab\{\par
+\tab int num,orig,newnum=0,r=0;\par
+\tab printf("Enter a number");\par
+\tab scanf("%d",&num);\par
+\tab orig=num;\par
+\tab while(num!=0)\par
+\tab\{\par
+\tab\tab r= num%10;\par
+\tab\tab newnum=newnum+r*r*r;\par
+\tab\tab num=num/10;\par
+\tab\}\par
+\tab printf("new number is%d",newnum);\par
+\tab  if(newnum==orig)\par
+\tab  \{\par
+\tab  \tab printf("number is armstrong");\par
+\tab  \}\par
+      else\par
+      \tab\{\par
+      \tab\tab printf("number is not armstrong");\par
+\tab\tab  \}\par
+\}\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\tab\{\par
+\tab int num,orig,newnum=0,r=0;\par
+\tab printf("Enter a number");\par
+\tab scanf("%d",&num);\par
+\tab orig=num;\par
+\tab while(num!=0)\par
+\tab\{\par
+\tab\tab r= num%10;\par
+\tab\tab newnum=newnum+r*r*r;\par
+\tab\tab num=num/10;\par
+\tab\}\par
+\tab printf("new number is%d",newnum);\par
+\tab  if(newnum==orig)\par
+\tab  \{\par
+\tab  \tab printf("number is armstrong");\par
+\tab  \}\par
+      else\par
+      \tab\{\par
+      \tab\tab printf("number is not armstrong");\par
+\tab\tab   \}\par
+\}\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab char ch;\par
+\tab printf("Enter a character");\par
+\tab scanf("%c",&ch);\par
+\tab if(ch>='A' && ch<='Z')\par
+\tab\{\par
+\tab   printf("%c",ch+32);  //convert to lowercase\par
+     \}\par
+\tab  else\par
+\tab  \{\par
+\tab  \tab if(ch>='a' && ch<='z')\par
+\tab  \tab\{\par
+\tab  \tab\tab printf("%c",ch-32);\par
+\tab  \tab\tab else\{\par
+\tab\tab\tab  \par
+\tab  \tab\tab printf("invalid choice");\par
+\tab  \tab\}\par
+\tab\tab  \}\par
+\tab\par
+\tab  \}\tab   \par
+\}\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+ int a[6]=\{3,5,8,14,67,89\};\par
+\tab int i, largest;\par
+\tab for(i=0;i<6;i++)\par
+\tab\{\par
+\tab\tab if(a[i]>largest)\par
+\tab\tab\{\par
+\tab\tab\tab printf("%d",largest);\par
+\tab\tab\}\par
+\tab\tab\par
+\tab\tab\par
+\tab\}\par
+\}\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int a[6]=\{10,20,30,40,50,60\};\par
+\tab int i,sum=0;\par
+\tab for(i=0;i<=6;i++)\par
+\tab\{\par
+\tab\tab sum=sum+a[i];\par
+\tab\tab\par
+\tab\}\par
+\tab printf("sum is %d\\n",sum);\par
+\}\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+int a[5],i,sum=0;\tab\par
+\tab float average;\par
+\tab printf("Enter five numbers");\par
+\tab scanf("%d",&a[i]);\par
+\tab for(i=0;i<=4;i++)\par
+\tab  sum=sum+a[i];\par
+\tab  average=sum/5.0;\par
+\tab  printf("average is%f",average);\par
+\tab  \par
+\tab  \par
+\}\par
+\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int i,j;\par
+\tab char k;\par
+\tab for(i=1;i<=3;i++)\par
+\tab\{\par
+\tab   k='A';\par
+\tab  for(j=1;j<=3;j++)\par
+\tab  \{\par
+\tab  \par
+\tab\tab if(j<=i)\par
+\tab\tab printf("%c",k);\par
+\tab\tab k++;\par
+\tab\}\par
+\tab\tab else\par
+\tab\tab  printf(" ");\par
+\tab\tab\par
+\tab\tab\par
+\tab\}\par
+\tab printf("\\n");\par
+\}\par
+\}\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int i,j;\par
+\tab for(i=1;i<=4;i++)\par
+\tab\{\par
+\tab\tab for(j=1;j<=4;j++)\par
+\tab\tab\{\par
+\tab\tab\tab if(j>=i&&j<=4)\par
+\tab\tab\tab  printf("1");\par
+\tab\tab\tab   else\par
+\tab\tab\tab   printf(" ");\par
+\tab\tab\}\par
+\tab\tab printf("\\n");\par
+\tab\}\par
+\}\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int i,j,k;\par
+\tab for(i=1;i<=5;i++)\par
+\tab\{\par
+\tab\tab k=1;\par
+\tab\tab for(j=1;j<=5;j++)\par
+\tab\tab\{\par
+\tab\tab\tab if(j<6-i)\par
+\tab\tab\tab\{\par
+\tab\tab\tab\tab printf("%d",k);\par
+\tab\tab\tab\tab k=1-k;\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\}\par
+\tab\tab\tab else\par
+\tab\tab\tab printf(" ");\par
+\tab\tab\}\par
+\tab\tab printf("\\n");\par
+\tab\}\par
+\par
+\}\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int i,j,k;\par
+\tab for(i=1;i<=5;i++)\par
+\tab\{\par
+\tab\tab k=5-i;\par
+\tab\tab for(j=1;j<=7;j++)\par
+\tab\tab\{\par
+\tab\tab\tab if(j<=5-k||j>=3+k)\par
+\tab\tab\tab    printf("*");\par
+\tab\tab\tab    k++;\par
+\tab\tab\tab  else\par
+\tab\tab\tab    printf("  ");\par
+\tab\tab\}\par
+\tab\tab\par
+\tab\tab printf("\\n");\par
+\tab\}\par
+\tab\par
+\par
+\}\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int x,y=0,r;\par
+\tab printf("Enter a number");\par
+\tab scanf("%d",&x);\par
+\tab while(x!=0)\par
+\tab\{\par
+\tab\tab r=x%10;\par
+\tab\tab y=y*10+r;\par
+\tab\tab x=x/10;\par
+\tab\tab\par
+\tab\}\par
+\tab\par
+\tab printf("Reverse of number is %d",y);\par
+\tab\par
+\tab\par
+\}\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int num,rev=0,r,orig;\par
+\tab printf("Enter a number");\par
+\tab scanf("%d",&num);\par
+\tab orig=num;\par
+\tab while(num!=0)\par
+\tab\{\par
+\tab\tab r=num%10;\par
+\tab\tab rev=rev*10+r;\par
+\tab\tab num=num/10;\par
+\tab\}\par
+\tab printf("Reverse number is%d",rev);\par
+\tab      if(orig==rev)\par
+\tab\{\par
+\tab\tab printf("number is palindrome\\n");\par
+\tab\}\par
+\tab    else\par
+\tab    \{\par
+\tab    \par
+\tab printf("number is not a palindrome");\par
+\tab\par
+      \}\par
+\par
+\}\par
+\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\tab\{\par
+\tab int num,orig,newnum=0,r=0;\par
+\tab printf("Enter a number");\par
+\tab scanf("%d",&num);\par
+\tab orig=num;\par
+\tab while(num!=0)\par
+\tab\{\par
+\tab\tab r= num%10;\par
+\tab\tab newnum=newnum+r*r*r;\par
+\tab\tab num=num/10;\par
+\tab\}\par
+\tab printf("new number is%d",newnum);\par
+\tab  if(newnum==orig)\par
+\tab  \{\par
+\tab  \tab printf("number is armstrong");\par
+\tab  \}\par
+      else\par
+      \tab\{\par
+      \tab\tab printf("number is not armstrong");\par
+\tab\tab   \}\par
+\tab\}\par
+\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\par
+ int N,c,i,a=-1,b=1;\par
+ printf("Enter a number");\par
+scanf("%d",&N);\par
+for(i=1;i<=N;i++)\par
+\{\par
+\tab c=a+b;\par
+\tab printf("%d",c);\par
+\tab  a=b;\par
+\tab b=c;\par
+\tab\par
+\}\par
+\par
+\}\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+ int A[3][3],B[3][3],C[3][3],i,j,sum;\tab\par
+\tab printf("Enter 9 numbers for first matrix");\par
+\tab for(i=0;i<=2;i++)\par
+\tab for(j=0;j<=2;j++)\par
+\tab scanf("%d",&A[i][j]);\par
+\tab printf("Enter 9 numbers for second matrix");\par
+\tab for(i=0;i<=2;i++)\par
+\tab for(j=0;j<=2;j++)\par
+\tab scanf("%d",&B[i][j]);\par
+\tab printf("sum of matrices is \\n");\par
+\tab for(i=0;i<=2;i++)\par
+\tab\{\par
+\tab\tab for(j=0;j<=2;j++)\par
+\tab\tab\{\par
+\tab\tab C[i][j]=A[i][j]+B[i][j];\par
+\tab\tab printf("%d ",C[i][j]);\par
+\tab\tab\}\par
+\tab\tab printf("\\n");\par
+\tab\tab\par
+\tab\}\par
+\}\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int A[3][3],B[3][3],C[3][3],i,j,k,sum;\par
+\tab printf("Enter 9 numbers for first matrix");\par
+\tab for(i=0;i<=2;i++)\par
+\tab for(j=0;j<=2;j++)\par
+\tab scanf("%d",&A[i][j]);\par
+\tab printf("Enter 9 numbers for second matrix");\par
+\tab for(i=0;i<=2;i++)\par
+\tab for(j=0;j<=2;j++)\par
+\tab scanf("%d",&B[i][j]);\par
+\tab\par
+\tab for(i=0;i<=2;i++)\par
+\tab\{\par
+\tab\tab for(j=0;j<=2;j++)\par
+\tab\tab\{\par
+\tab\tab\tab sum=0;\par
+\tab\tab\tab for(k=0;k<=2;k++)\par
+\tab\tab\tab sum=sum+A[i][j]+B[i][j];\par
+\tab\tab\tab C[i][j]=sum;\par
+\tab\tab\}\par
+\tab\tab for(i=0;i<=2;i++)\par
+\tab\tab\tab\{\par
+\tab\tab\tab\par
+\tab\tab\tab for(j=0;j<=2;j++)\par
+             printf("%d",C[i][j]);\par
+\tab\tab\tab printf("\\n");\par
+\tab\tab\}\par
+\tab\tab\par
+\tab\tab printf("\\n");\par
+\tab\}\par
+\}\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int N,i,sum=0;\par
+\tab printf("Enter a natural number");\par
+\tab scanf("%d",&N);\par
+\tab for(i=1;i<=N;i++)\par
+\tab    sum=sum+1;\par
+\tab printf("sum is %d",sum);\par
+\}\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int a,b,L;\par
+\tab printf("Enter two numbers");\par
+\tab scanf("%d%d",&a,&b);\par
+\tab for(L-1;L<=a*b;L++)\par
+\tab\{\par
+\tab\tab if(L%a==0 && L%b==0)\par
+\tab\tab      \par
+\tab\tab  printf("LCM is L %d",L);\par
+\tab\tab\par
+\tab\}\par
+\}\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
