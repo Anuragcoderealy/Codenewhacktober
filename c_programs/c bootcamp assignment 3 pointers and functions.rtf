@@ -1,0 +1,488 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int a,b,c,*p1,*p2,*p3;\par
+\tab printf("Enter two numbers");\par
+\tab scanf("%d%d",&a,&b);\par
+\tab p1=&a;\par
+\tab p2=&b;\par
+\tab p3=&c;\par
+\tab *p3=(*p1)+(*p3);\par
+\tab printf("sum is %d\\n",c);\par
+\}\par
+\par
+#include<stdio.h>\par
+void swap(int*,int*);\par
+int main()\par
+\{\par
+\tab int a,b;\par
+\tab printf("Enter value of a and b\\n");\par
+\tab scanf("%d%d",&a,&b);\par
+\tab\par
+\tab swap(&a,&b);\par
+\tab printf("After swapping value of a=%d and b=%d\\n",a,b);\par
+\tab\par
+\}\par
+\par
+void swap(int *x,int *y)\par
+\{\par
+\tab int temp;\par
+\tab temp=*x;\par
+\tab *x=*y;\par
+\tab *y=temp;\par
+\tab\par
+\}\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int a,b,c,*p1,*p2;\par
+\tab printf("Enter two numbers");\par
+\tab scanf("%d%d",&a,&b);\par
+    p1=&a;\par
+\tab p2=&b;\par
+\tab\par
+\tab *p1=*p1+*p2;\par
+\tab *p2=*p1-*p2;\par
+\tab *p1=*p1-*p2;\par
+\tab\par
+\tab printf("after swapping a is %d and b is %d",a,b);\par
+\tab\par
+\}\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int a,b,*p1,*p2;\par
+\tab *p1=&a;\par
+\tab *p2=&b;\par
+\tab printf("Enter the number");\par
+\tab scanf("%d%d",&a,&b);\par
+\tab\par
+\tab if(*p1>*p2)\par
+\tab   printf("largest number is %d",*p1);\par
+\tab   else\par
+\tab   printf("largest number is %d",*p2);\par
+\}\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int a[10],*p,i;\par
+\tab printf("Enter 10 elements");\par
+\tab scanf("%d",&a[i]);\par
+\par
+\tab   p=a;\par
+\tab   printf("array contains=");\par
+\tab   \{\par
+\tab   \par
+\tab  for(i=0;i<10;i++)\par
+\tab  \{\par
+\tab  \par
+\tab     printf("%d",*p);\par
+\tab   p++;\par
+\}\par
+\}\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int N,x,fact;\par
+\tab printf("Enter a number");\par
+\tab scanf("%d",&N);\par
+\tab   x=fact(N);\par
+\tab printf("factorial is %d",x);\par
+\}\par
+int fact(int N)\tab\par
+\tab\{\par
+\tab\tab int i,f=1;\par
+\tab\tab for(i=1;i<=N;i++)\par
+\tab\tab f=f*i;\par
+\tab\tab return(f);\par
+\tab\tab\par
+\tab\}\par
+\tab\par
+\}\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+  int c1=0,c2=0;\par
+\tab char str[10],*p;\par
+\tab printf("Enter string=");\par
+\tab gets(str);\par
+\tab *p==(str);\par
+\tab while(*p!='\\0')\par
+\tab\{\par
+    if(*p=='A',||*p=='E'||*p=='I'||*p=='o'||*p=='U'||*p=='a'||*p=='e'||*p=='i'||*p=='o'||*p=='u')\par
+\tab\tab c1++;\par
+\tab\tab else\par
+\tab\tab c2++;\par
+\tab\}\par
+      printf("vowel =%d\\n consonant=%d",c1,c2);\par
+\}\par
+\}\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int a[10]=\{11,22,36,15,2\};\par
+\tab int sum=0,*p;\par
+\tab p=&a;\par
+\tab for(p=&a[0];p<=&a[4];p++)\par
+\tab   sum=sum+*p;\par
+\tab printf("sum is %d",sum);\par
+\}\par
+\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int a,b,c,*p1,*p2,*p3;\par
+\tab *p1=&a;\par
+\tab *p2=&b;\par
+\tab *p3=&c;\par
+\tab printf("Enter the number");\par
+\tab scanf("%d%d%d",&a,&b,&c);\par
+\tab if(*p1>*p2 && *p1>*p3)\par
+\tab    printf("largest number is %d",*p1);\par
+\tab    else\par
+\tab       if(*p2>*p1 && *p2>*p3)\par
+\tab         printf("largest number is %d",*p2);\par
+\tab         else \par
+\tab         printf("largest number is %d",*p3);\par
+\}\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+//program to demonstrate the use of functions in c \par
+void add(int x,int y);  //function prototype\par
+int main()\par
+\{\par
+ int x,y;\tab\par
+\tab printf("Enter ywo numbers");\par
+\tab scanf("%d%d",&x,&y);\par
+\tab add(x,y);   //function call\par
+\}\par
+void add(int a,int b)\par
+\{\par
+\tab int c;\par
+\tab c=a+b;          //function definition\par
+\tab printf("sum is %d",c);\par
+\tab return c;\par
+\}\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+int square (int);\par
+int main()\par
+\{\par
+  \tab int num,s;\par
+\tab printf("Enter a number");\par
+    scanf("%d",&num);\par
+    s=square(num);\par
+    printf("square of number is %d",s);\par
+\}\par
+   int square (int)\par
+\{\par
+\tab int a;\par
+\tab return(a*a);\par
+\}\par
+\par
+\par
+\par
+#include<stdio.h>\par
+void swap (int*,int*);\par
+int main()\par
+\{\par
+\tab int a,b;\par
+\tab printf("before swap a =%d and b=%d",a,b);\par
+\tab scanf("%d%d",&a,&b);\par
+\tab swap(&a,&b);\par
+\tab printf("after swap a=%d and b=%d",a,b);\par
+\tab\par
+\}\par
+void swap(int *p,int *q);\par
+\{\par
+   int p,q,temp,*p,*q;\tab\par
+\tab temp=*p;\par
+\tab *p=*q;\par
+\tab *q=*temp;\par
+\}\par
+\par
+\par
+#include<stdio.h>\par
+int oddeven(int);\par
+int main()\par
+\{\par
+\tab int num;\par
+\tab printf("Enter a number");\par
+\tab scanf("%d",&num);\par
+\tab  if(num%2==0)\par
+\tab    printf("number is even");\par
+\tab else\par
+\tab   printf("number is odd");\par
+\}\par
+int oddeven(int);\par
+\{\par
+\tab int b;\par
+\tab a=b;\par
+\tab return(b%2==0);\par
+]\par
+\}\par
+\par
+\par
+#include<stdio.h>\par
+void checkprime(int n);\par
+\{\par
+\tab int num;\par
+\tab printf("Enter a number");\par
+\tab scanf("%d",&num);\par
+\tab for(i=2;i<num-1;i++)\par
+\tab    if(x%i==0)\par
+\tab      break;\par
+\tab if(i==num)\par
+\tab  printf("%d is a prime number",num);\par
+\tab else\par
+\tab printf("%d is not a prime number",num);\par
+\}\par
+ void checkprime(int n)\par
+\{\par
+\tab int n\par
+\tab prime();\par
+\tab\par
+\tab\par
+\}\par
+\par
+\par
+\par
+#include<stdio.h>\par
+void armstrong (int n);\par
+\par
+\{\par
+\tab int num,sum=0,r,original_number;\par
+\tab printf("Enter a number");\par
+\tab scanf("%d",&num);\par
+\tab original_number=num\par
+\tab while(num!=0)\par
+\tab\{\par
+\tab\tab r=num%10;\par
+\tab\tab sum=sum+r*r*r;\par
+\tab\tab num=num/10;\par
+\tab\}\par
+\tab printf("new number is %d",num);\par
+\tab if(sum=num)\par
+\tab   \{\par
+\tab   \tab printf("number is armstrong\\n");\par
+\tab   \}\par
+\tab else\par
+\tab\{\par
+\tab   printf("number is not armstrong\\n");\tab\par
+\tab\}\par
+ void armstrong(int n)\par
+\{\par
+  \par
+  armstrong();       //function call\par
+\}\par
+\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+\tab int num,i,sum=0,rem;\par
+\tab printf("Enter a number");\par
+\tab scanf("%d",&num);\par
+\tab for(i=1;i<num;i++)\par
+\tab\{\par
+\tab\tab rem=num%i;\par
+\tab\tab  if(rem==0)\par
+\tab\tab\{\par
+\tab\tab\tab sum=sum+i;\par
+\tab\tab\}\par
+\tab\}\par
+   if(sum==num)\par
+     printf("perfect number is %d",num);\par
+      else \par
+         printf("not perfect number is %d",num);\par
+\}\par
+  void perfect number (int)\par
+   \{\par
+   \tab\par
+   \tab perfect number();\par
+   \tab\par
+   \}\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+void average(void);\par
+void main()\par
+\{\par
+\tab int a,b,c,d,e,sum;\par
+\tab float average;\par
+\tab printf("Enter 5 numbers");\par
+\tab scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);\par
+\tab\par
+\tab printf("Average is %f",average);\par
+\tab\par
+\}\par
+ void average(void)\par
+\{\par
+\tab int a,b,c,d,e;\par
+\tab float sum,avg;\par
+\tab sum=a+b+c+d+e;\par
+\tab avg=(a+b+c+d+e)/5;\par
+\}\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+ square area ();\par
+ int main()\par
+\{\par
+  int a,square;\tab\par
+\tab printf("Enter side of square=");\par
+\tab scanf("%d",&a);\par
+\tab square=area(a*a);\par
+\tab print("\\nArea of square =%d",square);\par
+\}\par
+  area()\par
+\{\par
+\tab int a;\par
+\tab area=a*a;\par
+\tab return();\par
+\}\par
+\par
+\par
+#include<stdio.h>\par
+int volumecone(int r,int h,int v);\par
+int main()\par
+\{\par
+\tab float r,h;\par
+\tab printf("Enter the radius=");\par
+\tab scanf("%d",&r);\par
+\tab printf("Enter the height=");\par
+\tab scanf("%d",&h);\par
+\tab\par
+\}\par
+   int volumecone(int r,int h,int v)\par
+   \{\par
+   \tab int volume;\par
+   \tab v=v(0.33*3.14*r*r*h);\par
+   \tab printf("volume of cone=%f",volume);\par
+   \tab return(volume);\par
+   \}\par
+\par
+\par
+\par
+\par
+\par
+#include<stdio.h>\par
+//demonstrate the use of call by reference using functions\par
+void swap(int*,int*);\par
+int main()\par
+\{\par
+\tab int a,b;\par
+\tab printf("Enter two values");\par
+\tab scanf("%d%d",&a,&b);\par
+\tab printf("\\nBefore swapping a=%d,b=%d",a,b);\par
+\tab swap(&a,&b);\par
+\tab printf("\\nAfter swapping a=%d,b=%d ,a,b");\par
+\tab\par
+\}\par
+void swap(int*p,int*q)\par
+\{\par
+\tab int *p,*q,r;\par
+\tab r=*p;\par
+\tab *p=*q;\par
+\tab *q=r;\par
+\}\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
